@@ -1,0 +1,17 @@
+<div class="nav">
+  <div class="logo" (click)="onClickLogo()">
+    <img src="../../assets/logo.png" alt="">
+  </div>
+  <div class="mid-nav">
+    <a [routerLink]="'/menu'">All Drawing</a>
+    <a>Sketches</a>
+    <a>Portrait</a>
+    <a>Categories</a>
+    <a [routerLink]="'/account'" *ngIf="checkLog">Account</a>
+  </div>
+  <div>
+
+    <a [routerLink]="'/login'" *ngIf="!checkLog">Sign in</a>
+    <a [routerLink]="'/login'" *ngIf="checkLog" (click)="onClickLogout()">Logout</a>
+  </div>
+</div>

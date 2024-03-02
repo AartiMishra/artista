@@ -1,0 +1,11 @@
+.footer{
+    min-height: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot-inn{
+    width: 15%;
+    font-style: italic;
+}

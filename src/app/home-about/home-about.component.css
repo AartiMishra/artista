@@ -1,0 +1,16 @@
+.abt-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightcoral; */
+    margin-top: 150px;
+}
+.abt-mid{
+  width: 40%;
+  
+}
+.abt-last{
+    width: 40%;
+    color:  rgba(34, 9, 9, 0.329);
+
+}

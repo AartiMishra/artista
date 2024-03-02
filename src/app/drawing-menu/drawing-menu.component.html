@@ -1,0 +1,15 @@
+<div class="login-body">
+    <div class="login-top">
+        <p>Home/ <span class="login-span">Menu</span> </p>
+    </div>
+    <p class="signin"> All Drawings</p>
+
+    <div class="card-line">
+        <div class="card" *ngFor="let drawing of data">
+            <img src="../../assets/{{ drawing.imageName}}" alt="">
+            <p>{{drawing.name}}</p>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,43 @@
+<div class="login-body">
+    <div class="login-top">
+        <p>Home/ <span class="login-span">Login</span> </p>
+    </div>
+    <p class="signin"> Sign In</p>
+    <div class="login-main">
+        <form [formGroup]="loginForm" (ngSubmit)="OnSubmit(loginForm)" class="login-form">
+            <label for="login">
+                <p class="input-title">Email Address:</p>
+                <input class="input-box" [ngStyle]="{'border': '1px solid ' + borderCheck('email')}"
+                    [formControlName]="'email'" type="email" required email id="login">
+                <p *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched"
+                    class="validation invalid-color">Please use a valid email
+                    address,
+                    such as
+                    user@example.com.
+                </p>
+            </label>
+            <label for="password">
+                <p class="input-title">Password:</p>
+                <input class="input-box" [formControlName]="'password'"
+                    [ngClass]="{'invalid-border': borderCheck('password')}" required type="password" id="password">
+                <p *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"
+                    class="validation invalid-color">Password is compulsory
+                </p>
+            </label>
+            <button type="submit" class="top-btn" style="display: block;margin: 20px auto;">Sign in</button>
+        </form>
+        <div class="customer-instruction">
+            <p class="instruction-heading">New Customer?</p>
+            <p class="create">Create an account with us and you'll be able to:</p>
+            <ul>
+                <li>Check out faster</li>
+                <li>Save multiple shipping addresses</li>
+                <li>Access your order history</li>
+                <li>Track new orders</li>
+                <li>Save items to your Wish List</li>
+            </ul>
+            <button (click)="onClickSignin()" style="height:40px; font-size: 16px;" class="top-btn">Create
+                Account</button>
+        </div>
+    </div>
+</div>

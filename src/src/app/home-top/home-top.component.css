@@ -1,0 +1,27 @@
+.top-img {
+  /* height: 300px; */
+  width: 50%;
+
+}
+
+.home-first {
+  display: flex;
+  justify-content: space-between;
+  /* width: 45%; */
+  align-items: center;
+  padding-left: 140px;
+}
+
+.home-mid {
+  width: 50%;
+}
+
+.home-mid h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.home-mid p {
+  font-size: 20px;
+  color: #7A7A7A;
+}

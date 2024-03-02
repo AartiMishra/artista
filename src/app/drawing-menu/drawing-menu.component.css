@@ -1,0 +1,46 @@
+.login-body {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.login-top {
+  background-color: #F7F7F7;
+  font-size: 14px;
+}
+
+.login-span {
+  color: #757575;
+}
+
+.signin {
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card {
+  width: 100%;
+  min-height: 500px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.card img {
+  height: 90%;
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.card-line {
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 30% 30% 30%;
+  min-height: 500px;
+}

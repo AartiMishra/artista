@@ -1,0 +1,32 @@
+.nav {
+  /* border: 1px solid black; */
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: italic;
+  padding: 0 20px;
+
+}
+
+.mid-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+
+}
+
+.mid-nav a {
+  width: fit-content;
+
+
+}
+
+.mid-nav a:hover {
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  height: 25%;
+  width: 8%;
+}

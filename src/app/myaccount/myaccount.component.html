@@ -1,0 +1,14 @@
+<div class="login-body">
+    <div class="login-top">
+        <p>Home/ <span class="login-span">Account</span> </p>
+    </div>
+    <p class="signin"> Account</p>
+    <div class="account-nav">
+        <a routerLinkActive="active" [ngClass]="{active:condition}" [routerLink]="'/account/orders'"
+            style="width: 80px;">Orders</a>
+        <a [routerLinkActive]="'active'" [routerLink]="'addresses'" style="width: 100px;">Addresses</a>
+        <a [routerLinkActive]="'active'" [routerLink]="'account-settings'" style="width: 160px;">Account Settings</a>
+    </div>
+    <router-outlet></router-outlet>
+
+</div>

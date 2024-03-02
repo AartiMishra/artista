@@ -1,0 +1,49 @@
+.mid-top {
+  text-align: center;
+  margin-top: 80px;
+  min-height: 600px;
+  margin-bottom: 100px;
+}
+
+.top-heading {
+  font-size: 30px;
+  font-weight: 500;
+  /* font-style: italic; */
+}
+
+.mid-links {
+  display: flex;
+  justify-content: center;
+  /* font-style: italic; */
+  font-size: 20px;
+  margin: 30px 0;
+
+}
+
+.mid-links p {
+  padding: 0 40px;
+  font-size: 20px;
+  /* background-image: url("../../assets/mid-nav-bg.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card {
+  width: 30%;
+  height: 500px;
+  text-align: left;
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.card-line {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 500px;
+}

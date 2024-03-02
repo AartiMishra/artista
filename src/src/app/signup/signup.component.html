@@ -1,0 +1,60 @@
+<div class="login-body">
+    <div class="login-top">
+        <p>Home/ <span class="login-span">Signup</span> </p>
+    </div>
+    <p class="signin"> New Account</p>
+    <div class="signup-main" style="position: relative;">
+        <form [formGroup]="signupForm" (ngSubmit)="OnSubmit(signupForm)">
+            <label for="login">
+                <p class="input-title">Email Address:</p>
+                <input class="input-box" [formControlName]="'email'" type="email" id="login">
+            </label>
+            <label for="password">
+                <p class="input-title">Password:</p>
+                <input class="input-box" [formControlName]="'password'" type="password" id="password">
+            </label>
+            <label for="cpassword">
+                <p class="input-title">Username:</p>
+                <input class="input-box" type="text" [formControlName]="'username'" id="cpassword">
+            </label>
+            <label for="fName">
+                <p class="input-title">First Name:</p>
+                <input [formControlName]="'fName'" class="input-box" type="text" id="fName">
+            </label>
+            <label for="lName">
+                <p class="input-title">Last Name:</p>
+                <input [formControlName]="'lName'" class="input-box" type="text" id="lName">
+            </label>
+            <label for="cName">
+                <p class="input-title">Company name:</p>
+                <input [formControlName]="'cName'" class="input-box" type="email" id="cName">
+            </label>
+            <label for="phone">
+                <p class="input-title">Phone Number:</p>
+                <input [formControlName]="'phone'" class="input-box" type="email" id="phone">
+            </label>
+            <label for="alternatePhone">
+                <p class="input-title">Alternate Phone Number:</p>
+                <input [formControlName]="'alternatePhone'" class="input-box" type="email" id="alternatePhone">
+            </label>
+            <label for="address1">
+                <p class="input-title">Address Line1*:</p>
+                <input [formControlName]="'address1'" class="input-box" type="email" id="address1">
+            </label>
+            <label for="address2">
+                <p class="input-title">Address Line2:</p>
+                <input [formControlName]="'address2'" class="input-box" type="email" id="address2">
+            </label>
+            <label for="state">
+                <p class="input-title">State:</p>
+                <input [formControlName]="'state'" class="input-box" type="email" id="state">
+            </label>
+            <label for="code">
+                <p class="input-title">Zip/Postcode*:</p>
+                <input [formControlName]="'code'" class="input-box" type="email" id="code">
+            </label>
+
+            <button class="top-btn" style="margin-bottom: 40px;">Register</button>
+        </form>
+    </div>
+</div>
